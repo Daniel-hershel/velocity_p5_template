@@ -1,0 +1,91 @@
+/*SETUP*/
+
+html {
+box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+body{
+
+background-color: rgba(68, 68, 68, .05);
+font-family: 'Oswald';
+color:#444;
+font-size: 3.1vw;
+width: 95%;
+margin:auto;
+}
+
+@media (max-width: 599px) {
+body {
+// background: purple;
+font-size: 3.5vw;
+}
+}
+
+@media (min-width: 900px) {
+body{
+// font-size: 1.5vw; 
+}
+}
+
+/*CONTAINER FOR EVERYTHING*/
+#app{
+// background-color: rgba(68, 68, 68, .5);
+width : 90%;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+margin: auto;
+height: 80%;
+margin-bottom: 5vh;
+margin-top: 50%;
+
+// border: solid 1px #84FFA6;
+}
+
+@media (min-width: 900px) {
+#app{
+  width: 80%;
+
+}
+}
+
+@media (min-width: 1600px) {
+#app{
+  width: 70%;
+
+}
+}
+
+/*END SETUP*/
+
+
+/*PARTS*/
+
+
+#blastZone{
+// float: left;
+// position: absolute;
+}
+
+.letter{
+color: #E31F1B;	
+font-size: 150%;
+float:left;
+// position: absolute;
+
+}
+
+/*END PARTS*/
+
+
+
+
+
+
+
+

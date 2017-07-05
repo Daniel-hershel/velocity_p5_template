@@ -1,0 +1,93 @@
+
+
+/*  LOGO*/
+
+.logo {
+color: #444;
+   // border: solid 1px #6300FF; 
+position: relative;
+font-size: 90%;
+height: 7vh;
+top: 3em;
+}
+#who {
+/*  border: solid 1px #EE19F8; */
+font-size: 120%;
+font-weight: 800;
+position: absolute;
+height: 3em;
+padding: 0;
+margin: 0;
+top: 0;
+left: 0em;
+line-height: 0em;
+/*   font-size: 115%; */
+}
+#what {
+/*  border: solid 1px #FF7800; */
+position: absolute;
+height: 3em;
+top: 1em;
+left: 0em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+}
+
+#whatElse {
+/*  border: solid 1px #FF7800; */
+position: absolute;
+height: 3em;
+top: 1.8em;
+left: 0em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+}
+
+#logoAbout {
+position: absolute;
+height: 3em;
+top: 4.9em;
+// left: 3.7vh;
+left: 1.3em;
+margin: 0;
+line-height: 0em;
+opacity: .8;
+padding: 0;
+
+}
+
+#logoAbout a {
+  color: #444;
+font-weight: 200;
+font-size: 75%;
+text-decoration: none;
+
+}
+
+
+#about {
+
+}
+#about:hover{
+color: #70171A;
+}
+
+
+
+h2{
+font-weight: 200;
+// font-size: 100%;
+line-height: .001em;
+}
+h1{
+// font-size: 100%;
+line-height: 0em;
+font-weight: 500;
+/*width: 80%;*/
+}
+
+/* END  LOGO

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>p5Template</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+  <div id = "app">
+  <div id = "blastZone">
+welcome</div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
+<script src="libraries/jquery.blast.min.js"></script>
+<script src="libraries/textualizer.min.js" type="text/javascript"></script>
+<!-- <script src="libraries/jquery/jquery.lettering.js"></script> -->
+<!-- <script src="libraries/jquery/jquery.fittext.js"></script> -->
+
+
+<script>
+
+// blast
+$("#blastZone").blast({
+delimiter: "character",
+search: false, // Perform a search *instead* of delimiting
+tag: "div", // Set the wrapping element type (e.g. "div")
+customClass: "letter", // Add a custom class to wrappers
+generateIndexID: true,// Add #customClass-i to wrappers
+generateValueClass: true, // Add .blast-word-val to wrappers
+// stripHTMLTags: false // Strip HTML before blasting
+returnGenerated: true // Return generated elements to stack
+});
+
+// velocity animation looping
+$.Velocity.RegisterUI("demo", {
+defaultDuration: 3000,
+calls: [
+
+[ { translateZ: '+=1em', rotateZ: 180 }, 1, { loop: true, easing: "spring" } ],
+// [ { scaleX: 1 }, 0.25, { easing: "spring" } ]
+]
+});
+
+var $element = $('.letter')
+var runTime = 600
+var seq = [
+{ e: $element, p: 'demo', o:{ delay: 100, easing: "easeInOutCirc",}}
+]
+
+$.Velocity.RunSequence(seq);
+
+
+</script>
+  </body>
+</html>
